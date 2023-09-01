@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex practice</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    html {
+      /*color-scheme: dark light;*/
+    }
+
+    body {
+      min-height: 100vh;
+
+    }
+
+    img,
+    picture svg,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+    .flex-container {
+      display: flex;
+     
+
+      
+      grid-template-columns: repeat(8, 1fr);
+      /* Two columns of equal width */
+      grid-gap: 10px;
+      /* Gap between boxes */ 
+    }
+
+    html {
+      background-color: rgb(238, 235, 233);
+      padding: 20px;
+    }
+
+    #box1 {
+      background-color: lightblue;
+      padding: 20px;
+      
+    }
+
+    #box2 {
+      background-color: rgb(238, 177, 11);
+      padding: 20px;
+    }
+
+    #box3 {
+      background-color: rgb(54, 163, 72);
+      padding: 20px;
+    }
+
+    #box4 {
+      background-color: rgb(238, 11, 68);
+      padding: 20px;
+    }
+
+    #box5 {
+      background-color: rgb(196, 238, 11);
+      padding: 20px;
+
+    }
+
+    #box6 {
+      background-color: rgb(185, 11, 238);
+      padding: 20px;
+      text-align: center;
+    }
+
+    #box7 {
+      background-color: rgb(238, 177, 11);
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="box" id="box1" onclick="console.log('do')">1</div>
+    <div class="box" id="box2" onclick="console.log('re')">2</div>
+    <div class="box" id="box3" onclick="console.log('me ')">3</div>
+    <div class="box" id="box4" onclick="console.log('fa')">4</div>
+    <div class="box" id="box5" onclick="console.log('sol')">5</div>
+    <div class="box" id="box6" onclick="console.log('la')">6</div>
+    <div class="box" id="box7" onclick="console.log('si')">7</div>
+  </div>
+
+</body>
+
+</html>

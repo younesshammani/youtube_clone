@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    html {
+      /*color-scheme: dark light;*/
+    }
+
+    body {
+      min-height: 100vh;
+
+    }
+
+    img,
+    picture svg,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    /***/
+    .boxs{
+    font-size: 20px;
+
+      display: inline-block;
+    }
+    .boxs1 {
+    font-size: 20px;
+     
+      background-color: rgb(240, 106, 106);
+    }
+
+    .boxs2 {
+      
+      background-color: rgb(137, 207, 212);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boxs">
+    <div class="boxs1">One</div>
+    <div class="boxs2">Two</div>
+    <div class="boxs1">Tree</div>
+    <div class="boxs2">four</div>
+    <div class="boxs1">five</div>
+    <div class="boxs2">six</div>
+  </div>
+</body>
+</html>
